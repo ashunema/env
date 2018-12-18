@@ -91,7 +91,7 @@ RUN groupadd -f mqbrkrs && \
 
 # Copy in script files
 COPY *.sh /usr/local/bin/
-COPY  /etc/mqm/mq-config
+COPY  mq-config  /etc/mqm/mq-config 
 RUN sudo chmod +rx /usr/local/bin/*.sh \
   && sudo chmod +rx /etc/mqm/mq-config
 
